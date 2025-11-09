@@ -262,7 +262,7 @@ function checkTimeouts() {
 setInterval(checkTimeouts, 5000);
 
 // Ana WebSocket sunucusunu başlat
-const wss = new WebSocketServer({ port: PORT });
+const wss = new WebSocket.Server({ port: PORT });
 console.log(`Sinyal sunucusu ${PORT} portunda başlatıldı...`);
 
 wss.on('connection', (ws) => {
