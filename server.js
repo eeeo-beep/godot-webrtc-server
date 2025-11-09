@@ -6,7 +6,7 @@
  * "node server.js 1234" veya "PORT=1234 node server.js"
  */
 
-const { WebSocketServer } = require('ws'); // 'ws' kütüphanesini dahil et
+const WebSocket = require('ws'); // 'ws' kütüphanesini dahil et
 
 const PORT = process.env.PORT || 9080; // Sunucunun çalışacağı port
 const LOBBY_TIMEOUT = 10000; // Mühürlenmiş (sealed) lobilerin kapanma süresi (ms)
